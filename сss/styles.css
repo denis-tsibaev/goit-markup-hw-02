@@ -1,7 +1,3 @@
-/* общие для всего макета свойства */
-body {
-}
-
 a {
   text-decoration: none;
   color: #000000;
@@ -14,6 +10,10 @@ a {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+}
+
+.company-item.mail {
+  color: #757575;
 }
 
 .accent {
@@ -31,4 +31,8 @@ ul {
 .company-item:hover,
 :focus {
   color: #2196f3;
+}
+
+p {
+  color: #757575;
 }
