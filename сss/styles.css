@@ -18,6 +18,7 @@
   --second-font: "Raleway", sans-serif;
   --background-color: #2f303a;
   --white-color: #ffffff;
+  --background-team-section: #f5f4fa;
 }
 
 /* Стили к тэгам */
@@ -62,9 +63,9 @@ body span {
   line-height: 1.19;
 }
 
-/* .current {
-  color: #2196f3;
-} */
+.current {
+  color: var(--accent-color);
+}
 
 h1 {
   font-weight: 900;
@@ -73,20 +74,13 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  /* text-align: center; */
+  text-align: center;
 }
 
 h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
-  /* text-align: center; */
-}
-
-h3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.167;
   /* text-align: center; */
 }
 
@@ -96,12 +90,25 @@ h3 {
   height: 600px;
 }
 
-.banner button {
+.banner-btn {
   background-color: var(--accent-color);
   color: var(--white-color);
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .feature li h3 {
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--main-dark-color);
@@ -112,11 +119,21 @@ h3 {
   color: var(--second-dark-color);
 }
 
+.team {
+  background-color: var(--background-team-section);
+}
+
 .team li p {
   font-size: 16px;
   line-height: 1.187;
   /* text-align: center; */
   color: var(--second-dark-color);
+}
+
+.team li h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
 }
 
 button {
@@ -127,14 +144,8 @@ button {
   /* color: #FFFFFF; */
 }
 
-footer address {
-  font-style: normal;
-  line-height: 1.71;
-  /* color: #FFFFFF; */
-}
-
 .gallery li h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -160,16 +171,26 @@ address {
   color: var(--white-color);
 }
 
-.address {
+.mailtel {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--second-dark-color);
 }
 
-.footer {
-  background-color: var(--background-color);
+address {
+  /* убирает курсив адреса */
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--white-color);
 }
 
-footer li a {
+.footer {
+  background-color: var(--background-color);
+  width: 1600px;
+  height: 252px;
+}
+
+.mailtel-ftr {
   color: var(--tel-mail-color-footer);
+  line-height: 1.714;
 }
