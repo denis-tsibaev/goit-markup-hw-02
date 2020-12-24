@@ -86,8 +86,6 @@ h2 {
 
 .banner {
   background-color: var(--background-color);
-  width: 1600px;
-  height: 600px;
 }
 
 .banner-btn {
@@ -186,8 +184,6 @@ address {
 
 .footer {
   background-color: var(--background-color);
-  width: 1600px;
-  height: 252px;
 }
 
 .mailtel-ftr {
